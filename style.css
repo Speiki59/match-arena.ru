@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* Временные рамки */
+.about li::after {
+  content: "";
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 3px dashed rgb(204, 6, 48);
+}
+
+h2 {
+  visibility: hidden;
+}
+
+article img {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about h3 {
+  padding: 5px;
+  font-size: 1.7em;
+}
+
+.about h3 span {
+  color: white;
+  margin-right: 4px;
+  padding: 1px;
+  background-color: rgb(204, 6, 48);
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.about div p {
+  padding-top: 5px;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.booking::after {
+  content: "";
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  border-bottom: 3px dashed rgb(204, 6, 48);
+}
+
+.booking button {
+  font-size: 30px;
+  background-image: linear-gradient(#cc0630 0%, #8f0222 75%, #6d0019 100%);
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 0 grey;
+}
+
+.booking button:hover {
+  background: white;
+  color: rgb(204, 6, 48);
+  border: 2px solid rgb(204, 6, 48);
+}
+
+/* .booking {
+  margin: 50px;
+} */
+
+/* .booking form {
+  padding: 100px 0;
+  position: relative;
+  margin: 0 auto;
+} */
+
+/* Хeдер */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu ul {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.menu a:hover {
+  color: rgb(204, 6, 48);
+  border-bottom: 3px solid rgb(204, 6, 48);
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 2.5em;
+}
+
+.header-contacts a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-contacts img {
+  padding-top: 10px;
+}
+
+.header-contacts li img {
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+/* Контентная часть */
+main h1 {
+  /* font-family: "Philosopher", sans-serif; */
+  /* margin: 30px 30px; */
+  background: rgb(204, 6, 48);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+/* figcaption {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+} */
+
+.about article div {
+  padding: 10px;
+}
+
+.about li article {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about li:nth-child(2n) article {
+  flex-direction: row-reverse;
+}
+
+.price {
+  padding: 10px;
+  /* padding-bottom: 50px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.price div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 20px;
+  min-width: 250px;
+  min-height: 100px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sale {
+  position: absolute;
+  background-color: yellow;
+  text-decoration: line-through;
+  font-weight: 700;
+  transform: rotate(-30deg) scale(2);
+  line-height: 1.2em;
+}
+
+.price b {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.price span {
+  font-size: 0.75em;
+}
+
+.sale {
+  position: absolute;
+  background-color: yellow;
+  text-decoration: line-through;
+  font-weight: 700;
+  transform: rotate(-30deg) scale(2);
+  line-height: 1.2em;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.price p {
+  color: rgb(204, 6, 48);
+}
+
+.price a {
+  padding: 5px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: rgb(204, 6, 48);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.price a:hover {
+  padding: 3px;
+  color: rgb(204, 6, 48);
+  background: white;
+  border: 2px solid rgb(204, 6, 48);
+}
+
+.price div:hover {
+  transform: scale(1.1);
+  transition: all 500ms;
+}
+
+.price div {
+  transition: all 500ms;
+}
+
+.contacts {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: rgb(204, 6, 48);
+}
+
+.contacts div ul {
+  padding: 10px;
+}
+
+.map iframe {
+  border-radius: 10px;
+}
+
+/* Футер */
+
+footer {
+  margin: 25px 25px;
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  align-self: center;
+  padding-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+/* Кнопка вверх */
+
+.up-button {
+  background: transparent;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 20px;
+  right: 20px;
+  width: 57px;
+  height: 57px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid rgb(204, 6, 48);
+  border-radius: 50%;
+  color: rgb(204, 6, 48);
+  cursor: pointer;
+  display: none;
+}
+
+.shown {
+  display: inline-block;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Медиазапросы */
+
+@media screen and (max-width: 1199px) {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  /* .header-contacts {
+   transform: scale(.8);
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .menu {
+    font-size: 0.75em;
+    padding: 5px;
+  }
+
+  .header-contacts {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .map iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .up-button {
+    display: none;
+  }
+
+  main h1 {
+    /* margin: 20px; */
+
+    font-size: 25px;
+    /* text-align: center;
+    text-transform: uppercase; */
+  }
+
+  .about article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about li article {
+    flex-direction: column-reverse;
+  }
+
+  .about li:nth-child(2n) article {
+    flex-direction: column-reverse;
+  }
+
+  /* .booking {
+    margin: 125px;
+  } */
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  .contacts div {
+    padding: 0px;
+  }
+
+  .about div p {
+    padding-top: 5px;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+  }
+
+  /* .price div {
+    min-width: 80%;
+  } */
+}
+
+.anim {
+  opacity: 0;
+}
+
+.animated_in {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
