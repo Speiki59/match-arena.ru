@@ -69,6 +69,18 @@ li:hover a {
 
 @media screen and (max-width: 768px) {
     body {
-        width: 100%;
+        width: 95%;
+    }
+
+    .logo {
+        transform: scale(0.8);
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 }
