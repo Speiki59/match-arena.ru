@@ -357,6 +357,38 @@ button:focus {
   outline: none;
 }
 
+/* Выбор города */
+
+.city​-selection {
+  color: rgb(204, 6, 48);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  padding-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  position: absolute;
+  display: none;
+}
+.dropdown-child a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  border: 1px solid rgb(204, 6, 48);
+  background-color: white;
+  padding: 10px;
+}
+.dropdown-child a:first-child {
+ border-bottom: none;
+}
+.dropdown:hover .dropdown-child {
+  display: block;
+  
+}
 /* Медиазапросы */
 
 @media screen and (max-width: 1199px) {
