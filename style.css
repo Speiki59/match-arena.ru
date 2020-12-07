@@ -373,6 +373,8 @@ button:focus {
 .dropdown-child {
   position: absolute;
   display: none;
+  box-shadow: 2px 2px 5px grey;
+ 
 }
 .dropdown-child a {
   color: black;
@@ -381,6 +383,11 @@ button:focus {
   border: 1px solid rgb(204, 6, 48);
   background-color: white;
   padding: 10px;
+}
+
+.dropdown-child a:hover {
+  color: white;
+  background:  rgb(204, 6, 48);
 }
 .dropdown-child a:first-child {
  border-bottom: none;
