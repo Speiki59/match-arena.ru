@@ -43,6 +43,7 @@ article img {
 .about h3 {
   padding: 5px;
   font-size: 1.7em;
+  color: #494248;
 }
 
 .about h3 span {
@@ -117,7 +118,7 @@ header {
 .menu a {
   text-decoration: none;
   margin-left: 20px;
-  color: black;
+  color: #494248;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -125,6 +126,7 @@ header {
 .menu a:hover {
   color: rgb(175, 52, 45);
   border-bottom: 3px solid rgb(175, 52, 45);
+  transform: scale(1.1);
 }
 
 .header-contacts {
@@ -209,6 +211,7 @@ main section {
 }
 
 .price div {
+  color: #494248;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -252,7 +255,7 @@ main section {
   font-weight: 700;
   transform: rotate(-30deg) scale(2);
   line-height: 1.2em;
-  border: 1px solid black;
+  border: 1px solid #494248;;
   border-radius: 3px;
 }
 
@@ -322,6 +325,7 @@ footer span {
   padding-left: 20px;
   font-size: 25px;
   font-weight: 700;
+  color: #494248;
   text-transform: uppercase;
 }
 
@@ -441,6 +445,7 @@ button:focus {
   }
 
   .menu {
+    
     font-size: 0.75em;
     padding: 5px;
   }

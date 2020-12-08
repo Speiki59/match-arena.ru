@@ -44,6 +44,10 @@ p {
   line-height: 2em;
 }
 
+.m-text {
+  display: none;
+}
+
 h2 {
   color: #494248;
   margin-bottom: 15px;
@@ -54,8 +58,9 @@ h2 {
 
 ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 li {
@@ -94,6 +99,41 @@ li:hover a {
 
   h1 {
     font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    color: #494248;
+    font-size: 20px;
+    line-height: 2em;
+  }
+
+  .m-text {
+    display: inherit;
+  }
+
+  .advantage li {
+    margin: 5px;
+  }
+
+  .advantage li::after {
+    content: "";
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    border-bottom: 1px dashed rgb(175, 52, 45);
+  }
+
+  .advantage li:last-child::after {
+    border-bottom: none;
+  }
+  .pc-text {
+    display: none;
   }
 
   h2 {
