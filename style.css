@@ -13,6 +13,10 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  text-align: right;
+}
+
 li {
   list-style: none;
 }
@@ -23,7 +27,7 @@ li {
   display: flex;
   margin: 0 auto;
   width: 95%;
-  border-bottom: 3px dashed rgb(204, 6, 48);
+  border-bottom: 3px dashed rgb(175, 52, 45);
 }
 
 h2 {
@@ -45,7 +49,7 @@ article img {
   color: white;
   margin-right: 4px;
   padding: 1px;
-  background-color: rgb(204, 6, 48);
+  background-color: rgb(175, 52, 45);
   font-size: 1.5em;
   border-radius: 5px;
   padding-left: 5px;
@@ -62,7 +66,7 @@ article img {
   display: flex;
   margin: 0 auto;
   width: 95%;
-  border-bottom: 3px dashed rgb(204, 6, 48);
+  border-bottom: 3px dashed rgb(175, 52, 45);
 }
 
 .booking button {
@@ -77,8 +81,8 @@ article img {
 
 .booking button:hover {
   background: white;
-  color: rgb(204, 6, 48);
-  border: 2px solid rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
+  border: 2px solid rgb(175, 52, 45);
 }
 
 /* .booking {
@@ -119,8 +123,8 @@ header {
 }
 
 .menu a:hover {
-  color: rgb(204, 6, 48);
-  border-bottom: 3px solid rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
+  border-bottom: 3px solid rgb(175, 52, 45);
 }
 
 .header-contacts {
@@ -151,7 +155,7 @@ header {
 main h1 {
   /* font-family: "Philosopher", sans-serif; */
   /* margin: 30px 30px; */
-  background: rgb(204, 6, 48);
+  background: rgb(175, 52, 45);
   margin: 10px;
   padding: 10px;
   color: white;
@@ -253,7 +257,7 @@ main section {
 }
 
 .price p {
-  color: rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
 }
 
 .price a {
@@ -261,16 +265,16 @@ main section {
   color: white;
   font-size: 1.2em;
   font-weight: 500;
-  background: rgb(204, 6, 48);
+  background: rgb(175, 52, 45);
   border-radius: 5px;
   text-decoration: none;
 }
 
 .price a:hover {
   padding: 3px;
-  color: rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
   background: white;
-  border: 2px solid rgb(204, 6, 48);
+  border: 2px solid rgb(175, 52, 45);
 }
 
 .price div:hover {
@@ -294,7 +298,7 @@ main section {
 
 .contacts a {
   text-decoration: none;
-  color: rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
 }
 
 .contacts div ul {
@@ -341,9 +345,9 @@ footer img:hover {
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
-  border: 3px solid rgb(204, 6, 48);
+  border: 3px solid rgb(175, 52, 45);
   border-radius: 50%;
-  color: rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
   cursor: pointer;
   display: none;
 }
@@ -360,7 +364,7 @@ button:focus {
 /* Выбор города */
 
 .city​-selection {
-  color: rgb(204, 6, 48);
+  color: rgb(175, 52, 45);
   border: none;
   cursor: pointer;
 }
@@ -369,6 +373,7 @@ button:focus {
   padding-top: 10px;
   position: relative;
   display: inline-block;
+  text-align: left;
 }
 .dropdown-child {
   position: absolute;
@@ -380,14 +385,14 @@ button:focus {
   color: black;
   text-decoration: none;
   display: block;
-  border: 1px solid rgb(204, 6, 48);
+  border: 1px solid rgb(175, 52, 45);
   background-color: white;
   padding: 10px;
 }
 
 .dropdown-child a:hover {
   color: white;
-  background:  rgb(204, 6, 48);
+  background:  rgb(175, 52, 45);
 }
 .dropdown-child a:first-child {
  border-bottom: none;
@@ -406,7 +411,11 @@ button:focus {
   body {
     width: 100%;
   }
-
+  
+  .wrapper {
+    text-align: center;
+   }
+ 
   /* .header-contacts {
    transform: scale(.8);
   } */
