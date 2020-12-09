@@ -18,7 +18,7 @@ const scrollToTop = () => {
   const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentScroll > 0) {
     window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, currentScroll - currentScroll / 6);
+    window.scrollTo(0, currentScroll - currentScroll / 10);
   }
 };
 upButton.onclick = () => {
