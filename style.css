@@ -62,6 +62,24 @@ article img {
   line-height: 2em;
 }
 
+table {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.2em;
+  line-height: 2em;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: rgba(175, 52, 45, .5);
+}
+
 .booking::after {
   content: "";
   display: flex;
@@ -510,9 +528,13 @@ button:focus {
     flex-direction: column-reverse;
   }
 
-  /* .booking {
-    margin: 125px;
-  } */
+  .about li::after {
+    display: none;
+  }
+
+  .booking::after {
+    display: none;
+  }
 
   .contacts {
     flex-direction: column;
@@ -520,6 +542,11 @@ button:focus {
     justify-content: space-around;
     font-size: 1.5em;
     line-height: 1.5em;
+  }
+
+  .contacts h2 {
+    font-size: 0;
+    line-height: 0;
   }
 
   .contacts div {
