@@ -36,4 +36,4 @@ setTimeout(function (event) {
   const bookBTN = document.getElementById("bookform-floating-button");
   const myBookBTN = document.querySelector(".self_book_btn");
   myBookBTN.addEventListener("click", () => eventFire(bookBTN, "click"));
-}, 300);
+}, 500);
