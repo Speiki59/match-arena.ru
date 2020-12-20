@@ -63,25 +63,6 @@ article img {
   line-height: 2em;
 }
 
-table {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 1.2em;
-  line-height: 2em;
-  border-collapse: collapse;
-}
-
-table td {
-  padding: 20px;
-}
-
-/* tr:nth-child(even) {
-  color: white;
-  background: rgb(175, 52, 45);
-} */
-
 .self_book_btn {
   position: relative;
   background: rgb(175, 52, 45);
@@ -138,32 +119,6 @@ rect {
   border-bottom: 3px dashed rgb(175, 52, 45);
 }
 
-/* .booking button {
-  font-size: 30px;
-  background-image: linear-gradient(#cc0630 0%, #8f0222 75%, #6d0019 100%);
-  color: #ffffff;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px;
-  box-shadow: 5px 5px 5px 0 grey;
-}
-
-.booking button:hover {
-  background: white;
-  color: rgb(175, 52, 45);
-  border: 2px solid rgb(175, 52, 45);
-} */
-
-/* .booking {
-  margin: 50px;
-} */
-
-/* .booking form {
-  padding: 100px 0;
-  position: relative;
-  margin: 0 auto;
-} */
-
 /* Хeдер */
 header {
   display: flex;
@@ -194,7 +149,6 @@ header {
 .menu a:hover {
   color: rgb(175, 52, 45);
   border-bottom: 3px solid rgb(175, 52, 45);
-  /* transform: scale(1.1); Тоже не понял зачем, оно не работает так если че  */
 }
 
 .header-contacts {
@@ -202,7 +156,6 @@ header {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  /* padding: 10px; УБРАЛ. хз зачем он тут */
   font-size: 1.2em;
   line-height: 2.5em;
 }
@@ -223,8 +176,6 @@ header {
 
 /* Контентная часть */
 main h1 {
-  /* font-family: "Philosopher", sans-serif; */
-  /* margin: 30px 30px; */
   background: rgb(175, 52, 45);
   margin: 10px;
   padding: 10px;
@@ -245,12 +196,6 @@ main section {
   display: flex;
   flex-direction: column;
 }
-
-/* figcaption {
-  text-align: center;
-  font-style: italic;
-  color: gray;
-} */
 
 .about article div {
   padding: 10px;
@@ -285,95 +230,6 @@ main section {
 
 .price-list li:nth-child(even) {
   color: #af342d;
-}
-
-.price {
-  padding: 10px;
-  /* padding-bottom: 50px; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.price div {
-  color: #494248;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 20px 20px;
-  min-width: 250px;
-  min-height: 100px;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  border-radius: 5px;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.sale {
-  position: absolute;
-  background-color: yellow;
-  text-decoration: line-through;
-  font-weight: 700;
-  transform: rotate(-30deg) scale(2);
-  line-height: 1.2em;
-}
-
-.price b {
-  padding: 10px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-
-.price span {
-  font-size: 0.75em;
-}
-
-.sale {
-  position: absolute;
-  background-color: yellow;
-  text-decoration: line-through;
-  font-weight: 700;
-  transform: rotate(-30deg) scale(2);
-  line-height: 1.2em;
-  border: 1px solid #494248;
-  border-radius: 3px;
-}
-
-.price p {
-  color: rgb(175, 52, 45);
-}
-
-.price a {
-  padding: 5px;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 500;
-  background: #af342d;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.price a:hover {
-  padding: 3px;
-  color: rgb(175, 52, 45);
-  background: white;
-  border: 2px solid rgb(175, 52, 45);
-}
-
-.price div:hover {
-  transform: scale(1.1);
-  transition: all 500ms;
-}
-
-.price div {
-  transition: all 500ms;
 }
 
 .contacts {
@@ -422,8 +278,8 @@ footer img:hover {
 }
 
 /* Кнопка вверх */
-/* Убрал лишнии свойства */
-.up-button {
+/* .up-button {
+  display: none;
   background: url(./img/up-arrow.svg);
   position: fixed;
   z-index: 1;
@@ -433,8 +289,8 @@ footer img:hover {
   height: 50px;
   cursor: pointer;
   opacity: 0;
-}
-/* Название класса поменял, так как у тебя он был просто shown ??? тип хз что это за поебота */
+} */
+
 .up-button__show {
   animation: jump-in 400ms ease-in forwards;
 }
@@ -528,9 +384,6 @@ button:focus {
     text-align: center;
   }
 
-  /* .header-contacts {
-   transform: scale(.8);
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -571,16 +424,12 @@ button:focus {
     height: auto;
   }
 
-  .up-button {
+  /* .up-button {
     display: none;
-  }
+  } */
 
   main h1 {
-    /* margin: 20px; */
-
     font-size: 25px;
-    /* text-align: center;
-    text-transform: uppercase; */
   }
 
   .about article {
@@ -604,11 +453,7 @@ button:focus {
   .price-list {
     margin-bottom: 20px;
     margin-top: 0;
-    font-size: 1.2em;
-  }
-
-  table {
-    padding: 10px;
+    font-size: 1.19em;
   }
 
   .booking::after {
@@ -638,10 +483,6 @@ button:focus {
     line-height: 2em;
     text-align: center;
   }
-
-  /* .price div {
-    min-width: 80%;
-  } */
 }
 
 .anim {
