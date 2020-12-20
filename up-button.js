@@ -21,3 +21,19 @@ upButton.onclick = () => window.scrollTo({ top: 0 });
 const currentCity = document.querySelector(".city​-selection");
 currentCity.innerHTML =
   window.location.href.split("/").pop().split(".").shift() === "prm" ? "пермь" : "екатеринбург";
+
+// КНОПОЧКА БРОНИРОВАНИЯ
+function eventFire(el, etype) {
+  if (el.fireEvent) {
+    el.fireEvent("on" + etype);
+  } else {
+    var evObj = document.createEvent("Events");
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+setTimeout(function (event) {
+  const bookBTN = document.getElementById("bookform-floating-button");
+  const myBookBTN = document.getElementById("self_book_btn");
+  myBookBTN.addEventListener("click", () => eventFire(bookBTN, "click"));
+}, 300);
