@@ -89,7 +89,6 @@ table td {
   cursor: pointer;
   font-size: 20px !important;
   font-weight: 500 !important;
-  /* border-radius: 30px !important; */
   height: 60px !important;
   padding: 0 30px !important;
   line-height: 60px !important;
@@ -119,6 +118,7 @@ rect {
   stroke-dashoffset: 200;
   transition: all 1000ms ease;
 }
+
 .self_book_btn:hover {
   background: transparent;
   color: rgb(175, 52, 45);
@@ -266,6 +266,25 @@ main section {
 
 .about li:nth-child(2n) article {
   flex-direction: row-reverse;
+}
+
+.price-list {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  line-height: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.booking span {
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+.price-list li:nth-child(even) {
+  color: #af342d;
 }
 
 .price {
@@ -582,6 +601,12 @@ button:focus {
     display: none;
   }
 
+  .price-list {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
   table {
     padding: 10px;
   }
@@ -594,7 +619,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 1.5em;
   }
 
