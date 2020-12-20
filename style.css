@@ -77,7 +77,7 @@ table td {
 }
 
 tr:nth-child(even) {
-  background: rgba(175, 52, 45, .5);
+  background: rgba(175, 52, 45, 0.5);
 }
 
 .booking::after {
@@ -530,6 +530,10 @@ button:focus {
 
   .about li::after {
     display: none;
+  }
+
+  table {
+    padding: 10px;
   }
 
   .booking::after {
