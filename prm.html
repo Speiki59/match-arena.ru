@@ -109,6 +109,32 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bookform widget -->
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w["BookformObject"] = o;
+        w[o] =
+          w[o] ||
+          function () {
+            (w[o].q = w[o].q || []).push(arguments);
+          };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(
+        window,
+        document,
+        "script",
+        "Bookform",
+        "https://widget.bookform.ru/44916/js"
+      );
+      Bookform("floatingButton", { id: 44916 });
+    </script>
+    <!-- End Bookform widget -->
+
     <title>Матч-Арена. Футбольный манеж в Перми</title>
   </head>
   <body>
@@ -247,22 +273,22 @@
       <section class="booking anim" id="booking">
         <table>
           <tr>
-              <td>В будни с 00:00 до 18:00</td>
-              <td>1500 руб/ч</td>
+            <td>В будни с 00:00 до 18:00</td>
+            <td>1500 руб/ч</td>
           </tr>
           <tr>
-              <td>В будни с 18:00 до 00:00</td>
-              <td>2000 руб/ч</td>
+            <td>В будни с 18:00 до 00:00</td>
+            <td>2000 руб/ч</td>
           </tr>
           <tr>
-              <td>Суббота</td>
-              <td>1500 руб/ч</td>
+            <td>Суббота</td>
+            <td>1500 руб/ч</td>
           </tr>
           <tr>
-              <td>Воскресенье</td>
-              <td>2000 руб/ч</td>
+            <td>Воскресенье</td>
+            <td>2000 руб/ч</td>
           </tr>
-      </table>
+        </table>
         <!-- <div class="price">
           <div>
             <span class="sale">2000₽</span>
@@ -343,6 +369,7 @@
 
     <!-- Футер -->
     <footer class="anim">
+      <span>Мы в соц.сетях</span>
       <div class="social">
         <a href="https://vk.com/match_arena_perm" target="_blank"
           ><img src="img/vk-logo.svg" alt="Vkontakte" width="57" height="57"
@@ -355,7 +382,6 @@
             height="57"
         /></a>
       </div>
-      <span>Мы в соц.сетях</span>
     </footer>
 
     <div class="up-button" />
