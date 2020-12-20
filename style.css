@@ -485,6 +485,14 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 339px) {
+  .price-list {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 1em;
+  }
+}
+
 .anim {
   opacity: 0;
 }
