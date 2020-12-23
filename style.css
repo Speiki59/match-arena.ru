@@ -383,7 +383,6 @@ button:focus {
   .wrapper {
     text-align: center;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -483,6 +482,13 @@ button:focus {
     line-height: 2em;
     text-align: center;
   }
+
+  .bookform-floating-button {
+    font-size: 14px !important;
+  }
+  .bookform-floating-button.left {
+    bottom: 24px !important;
+  }
 }
 
 @media screen and (max-width: 339px) {
@@ -502,9 +508,9 @@ button:focus {
   transition: opacity 800ms ease-in;
 }
 
-.bookform-floating-button {
-  top: 0 !important;
-}
-.bookform-floating-button-close {
-  top: 0 !important;
-}
+/*.bookform-floating-button {*/
+/*  top: 0 !important;*/
+/*}*/
+/*.bookform-floating-button-close {*/
+/*  top: 0 !important;*/
+/*}*/
